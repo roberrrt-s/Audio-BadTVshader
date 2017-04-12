@@ -1,7 +1,6 @@
 var Ticketscript = {};
 Ticketscript.Application = {
 	containerId:"ts-shop",
-	channel:"WE5B8K6N",
 	eventId:"",
 	type:"iframe",
 	language:"nl",
