@@ -1,6 +1,7 @@
 var Ticketscript = {};
 Ticketscript.Application = {
 	containerId:"ts-shop",
+	channel:"WE5B8K6N",
 	eventId:"",
 	type:"iframe",
 	language:"nl",
@@ -19,7 +20,7 @@ Ticketscript.Application = {
 	var gui;
 	var pnoise, globalParams;
 
-	setCountdown();
+	invokeTicketshop();
 	init();
 	animate();
 
@@ -274,6 +275,10 @@ Ticketscript.Application = {
 			$(this).html(event.strftime('00:00:00'));
 			$('.iframe-container').fadeIn();
 		});
+	}
+
+	function invokeTicketshop() {
+		$('.iframe-container').show();
 	}
 
 	function onResize() {
